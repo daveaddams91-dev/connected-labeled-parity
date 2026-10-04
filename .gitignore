@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+scratch_*.py
+extract_pdf.py
+mani-stones.pdf
+mani-stones.txt
