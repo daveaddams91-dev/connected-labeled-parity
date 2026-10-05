@@ -1,7 +1,6 @@
 """Falsification attempts: brute force, recurrence consistency, adversarial residues."""
 import os
 import sys
-from math import comb, factorial
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
 from connected_parity.enumeration import (
@@ -16,6 +15,9 @@ from connected_parity.brute import brute_connected_graphs, brute_weak_digraphs
 
 
 def main() -> None:
+    """Entry point — parse arguments and run the main computation.
+    
+    """
     failures = []
     # 1. Brute-force cross-check (independent implementation).
     c = connected_graphs(6)
