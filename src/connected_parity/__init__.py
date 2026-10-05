@@ -1,4 +1,5 @@
 """Public package interface."""
+
 from .enumeration import (
     v2,
     v2_factorial,

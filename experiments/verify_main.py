@@ -23,6 +23,9 @@ HYPER_N = 30
 
 
 def main() -> None:
+    """Entry point — parse arguments and run the main computation.
+    
+    """
     os.makedirs("results", exist_ok=True)
     t0 = time.time()
     c = connected_graphs(GRAPH_N)
