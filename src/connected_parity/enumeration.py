@@ -1,5 +1,6 @@
 """Connected labeled structures: exact enumeration recurrences."""
 from __future__ import annotations
+
 from math import comb
 
 
