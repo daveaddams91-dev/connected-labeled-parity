@@ -1,9 +1,19 @@
 """Exhaustive brute-force checks for small n (falsification)."""
 from __future__ import annotations
-from itertools import combinations
+
 
 
 def _is_connected(n: int, edges: set) -> bool:
+    """Is connected.
+    
+    Args:
+        n:
+        edges:
+    
+    Returns:
+        bool: Result of type bool
+    
+    """
     if n <= 1:
         return True
     adj: list[set[int]] = [set() for _ in range(n)]
@@ -33,6 +43,16 @@ def brute_connected_graphs(n: int) -> int:
 
 
 def _is_weakly_connected(n: int, arcs: set) -> bool:
+    """Is weakly connected.
+    
+    Args:
+        n:
+        arcs:
+    
+    Returns:
+        bool: Result of type bool
+    
+    """
     if n <= 1:
         return True
     adj: list[set[int]] = [set() for _ in range(n)]
